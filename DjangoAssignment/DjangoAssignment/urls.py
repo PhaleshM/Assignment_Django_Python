@@ -15,8 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from billing.views import InvoiceListCreateView, InvoiceDetailView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('billing.urls')),
+    # path('api/', include('billing.urls')),
+    path('invoices/', InvoiceListCreateView.as_view(), name='invoice-list-create'),
+    path('invoices/<int:pk>/', InvoiceDetailView.as_view(), name='invoice-detail'),
+
 ]
