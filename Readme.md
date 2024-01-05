@@ -57,7 +57,7 @@ This is a Django project that provides a RESTful API for managing invoices and a
     python manage.py runserver
     ```
 
-7. Access the API at [http://127.0.0.1:8000/api/](http://127.0.0.1:8000/api/)
+7. Access the API at [http://127.0.0.1:8000/api/](http://127.0.0.1:8000/)
 
 ## API Endpoints
 
